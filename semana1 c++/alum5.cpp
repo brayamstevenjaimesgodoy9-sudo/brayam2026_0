@@ -6,7 +6,7 @@ int main(){
     float promedio;
     cout << "Ingrese tres numeros: ";
     cin >> prom1 >> prom2 >> prom3;
-    promedio = (prom1 + prom2 + prom3) / 3.0;
+    promedio = (prom1 + prom2 + prom3) / 3;
     cout << "El promedio es: " << promedio << endl;
     return 0;
 }
