@@ -7,4 +7,5 @@ int main(){
     cin >> lado;
     perimetro = lado * 4;
     cout << "el permetro es de: " << perimetro <<endl;
+    return 0 ;
 }

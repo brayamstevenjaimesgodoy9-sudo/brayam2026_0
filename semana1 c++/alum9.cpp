@@ -12,4 +12,5 @@ int main(){
     } else{
         cout << "los dos numeros son iguales: " << nume << nume2 << endl;
     }
+    return 0 ;
 }

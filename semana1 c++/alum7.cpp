@@ -7,4 +7,5 @@ int main(){
     cin >> metros;
     centimetros = metros * 100;
     cout << metros << " metros son " << centimetros << " centimetros" << endl;
+    return 0 ;
 }
