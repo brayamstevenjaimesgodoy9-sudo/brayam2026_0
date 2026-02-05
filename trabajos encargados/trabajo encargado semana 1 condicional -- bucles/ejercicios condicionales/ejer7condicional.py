@@ -1,5 +1,3 @@
-num = int(input("Ingrese un numero: "))
-
 print("Ingrese los numeros:")
 numero7 = int(input())
 numero8 = int(input())
