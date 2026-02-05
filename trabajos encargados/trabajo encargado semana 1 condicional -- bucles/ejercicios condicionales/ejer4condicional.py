@@ -1,6 +1,6 @@
-nota = float(input("Ingrese su nota: "))
+numero6 = int(input("Ingrese su edad correcta por favor: "))
 
-if nota >= 10.5:
-    print("Aprobado")
+if numero6 >= 18:
+    print("El usuario es mayor de edad, bienvenido:", numero6)
 else:
-    print("Desaprobado")
+    print("El usuario es menor de edad, no ingrese:", numero6)

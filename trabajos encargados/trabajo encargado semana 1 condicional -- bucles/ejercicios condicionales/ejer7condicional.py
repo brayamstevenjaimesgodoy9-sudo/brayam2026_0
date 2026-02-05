@@ -1,6 +1,25 @@
 num = int(input("Ingrese un numero: "))
 
-if num >= 1 and num <= 10:
-    print("El numero esta en el rango de 1 a 10")
+print("Ingrese los numeros:")
+numero7 = int(input())
+numero8 = int(input())
+
+operador = input("Ingrese el operador deseado +, -, *, /: ")
+
+if operador == '+':
+    print("La suma es:", numero7 + numero8)
+
+elif operador == '-':
+    print("La resta es:", numero7 - numero8)
+
+elif operador == '*':
+    print("La multiplicacion es:", numero7 * numero8)
+
+elif operador == '/':
+    if numero8 != 0:
+        print("La division es:", numero7 / numero8)
+    else:
+        print("El numero no puede ser cero")
+
 else:
-    print("El numero esta fuera del rango")
+    print("Operacion no valida")

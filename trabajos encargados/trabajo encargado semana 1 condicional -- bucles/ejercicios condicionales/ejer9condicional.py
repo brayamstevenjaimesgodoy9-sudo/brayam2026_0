@@ -1,12 +1,41 @@
-num1 = int(input("Ingrese primer numero: "))
-num2 = int(input("Ingrese segundo numero: "))
-num3 = int(input("Ingrese tercer numero: "))
+print("Ingrese un dia para una frase del dia")
+print("1: Lunes")
+print("2: Martes")
+print("3: Miercoles")
+print("4: Jueves")
+print("5: Viernes")
+print("6: Sabado")
+print("7: Domingo")
 
-mayor = num1
+opcion = int(input())
 
-if num2 > mayor:
-    mayor = num2
-if num3 > mayor:
-    mayor = num3
+if opcion == 1:
+    print("Lunes:")
+    print("Feliz lunes y que tengas suerte")
 
-print("El numero mayor es:", mayor)
+elif opcion == 2:
+    print("Martes:")
+    print("Este dia tendras buen momento")
+
+elif opcion == 3:
+    print("Miercoles:")
+    print("Gran dia, ten voluntad")
+
+elif opcion == 4:
+    print("Jueves:")
+    print("Un dia bien hermoso y calido")
+
+elif opcion == 5:
+    print("Viernes:")
+    print("Este dia tendras mayor calidad de vida")
+
+elif opcion == 6:
+    print("Sabado:")
+    print("Este dia es un buen descanso")
+
+elif opcion == 7:
+    print("Domingo:")
+    print("Este dia es un buen dia de capacitacion")
+
+else:
+    print("Dia no valido")

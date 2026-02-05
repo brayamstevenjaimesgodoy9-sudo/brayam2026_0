@@ -1,6 +1,11 @@
-num = int(input("Ingrese un numero: "))
+horas = int(input("Ingrese horas trabajadas: "))
 
-if num % 3 == 0 and num % 5 == 0:
-    print("Es multiplo de 3 y 5")
+extra = horas > 40
+
+if not extra:
+    salario = horas * 16
+    print("Tu salario normal es:", salario)
 else:
-    print("No es multiplo de 3 y 5")
+    horaextra = horas - 40
+    salario = (horas * 16) + (horaextra * 0.20)
+    print("Tu salario tiene aumento extra:", salario)

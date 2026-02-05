@@ -1,6 +1,8 @@
-edad = int(input("Ingrese su edad: "))
+numero5 = int(input("Ingrese numero: "))
 
-if edad >= 18:
-    print("Usted es mayor de edad")
+if numero5 < 0:
+    print("El numero es negativo:", numero5)
+elif numero5 > 0:
+    print("El numero es positivo:", numero5)
 else:
-    print("Usted es menor de edad")
+    print("El numero es cero:", numero5)

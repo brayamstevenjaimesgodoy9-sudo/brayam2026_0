@@ -1,8 +1,7 @@
-num = int(input("Ingrese un numero: "))
+compra = int(input("Ingresar el monto de las compras: "))
 
-if num > 0:
-    print("El numero es positivo")
-elif num < 0:
-    print("El numero es negativo")
+if compra >= 1000:
+    resul = compra * 0.20
+    print("La compra tiene descuento de 20%, solo pagarás:", resul)
 else:
-    print("El numero es cero")
+    print("La compra no tiene descuento:", compra, "no es suficiente para el descuento")
