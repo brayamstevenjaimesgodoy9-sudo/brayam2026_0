@@ -1,0 +1,96 @@
+@startuml diagrama
+
+'========================
+' CLASE BASE
+'========================
+class Persona {
+    - nombre : string
+    - edad : int
+    + getNombre() : string
+    + getEdad() : int
+}
+
+'========================
+' HERENCIA
+'========================
+class Paciente {
+    - dni : string
+    - telefono : string
+}
+
+class Doctor {
+    - codigo : string
+    - especialidad : string
+    - tarifa : double
+}
+
+Persona <|-- Paciente
+Persona <|-- Doctor
+
+
+'========================
+' HISTORIA CLINICA
+' COMPOSICION
+'========================
+class HistoriaClinica {
+    - entradas : List<EntradaHistoria>
+    + agregarEntrada()
+}
+
+class EntradaHistoria {
+    - fecha : string
+    - diagnostico : string
+    - notas : string
+}
+
+Paciente *-- HistoriaClinica
+HistoriaClinica *-- "1..*" EntradaHistoria
+
+
+'========================
+' CITA (ASOCIACION)
+'========================
+class Cita {
+    - id : int
+    - fecha : string
+    - hora : string
+    - motivo : string
+}
+
+Paciente "1" -- "0..*" Cita
+Doctor "1" -- "0..*" Cita
+
+
+'========================
+' CLINICA
+' AGREGACION
+'========================
+class Clinica {
+    - doctores : List<Doctor>
+    - pacientes : List<Paciente>
+    - citas : List<Cita>
+
+    + registrarPaciente()
+    + registrarDoctor()
+    + crearCita()
+    + cancelarCita()
+    + listarCitasPaciente()
+    + listarCitasDoctor()
+}
+
+Clinica o-- Doctor
+Clinica -- Paciente
+Clinica -- Cita
+
+
+'========================
+' REPORTE (DEPENDENCIA)
+'========================
+class Reporte {
+    + generarPorEspecialidad(c : Clinica)
+    + generarPorDia(c : Clinica)
+}
+
+Reporte ..> Clinica : usa
+
+@enduml
