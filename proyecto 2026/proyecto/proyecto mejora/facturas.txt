@@ -1,0 +1,90 @@
+4
+6055
+08/03/2026
+Sandro Jesus Francisco
+123456789
+Av. Alameda - Tingo Maria
+3
+1
+Arroz
+Kg.
+3.9
+3
+2
+Aceite
+ml.
+7
+6
+3
+Leche
+ml.
+4
+12
+6055
+10/03/2026
+carlos
+1234567891
+av carlos arevalo cuadra8
+5
+1
+saco arroz
+10
+10
+10
+2
+saco de azucar
+kg
+2.5
+10
+3
+saco papa blanca
+kg
+2
+1
+4
+caja de galletas
+unidad
+13.5
+2
+5
+agua mineral
+litros
+12
+14
+6055
+10/03/2026
+carlos
+1234567891
+av carlos arevalo cuadra 8
+3
+1
+caja de aceite 900 ml
+ml
+3
+12
+2
+agua mineral 900 ml
+ml
+1.5
+12
+3
+saco azucar 
+kg
+2
+2
+6055
+10/03/2026
+carlos
+1234567891
+av carlos arevalo cuadra 8
+2
+1
+caja de aceite 900 ml
+ml
+2
+12
+2
+agua mineral 
+ml
+1
+12
